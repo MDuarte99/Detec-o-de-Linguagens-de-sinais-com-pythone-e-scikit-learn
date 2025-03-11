@@ -30,3 +30,20 @@ Este repositório contém um projeto baseado no vídeo de [Phillip](https://www.
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+
+2️⃣ Clone este repositório:
+```bash
+  pip install -r requirements.txt
+
+3️⃣ Execute os notebooks na ordem:
+Libras.ipynb → Para capturar os dados.
+Cria_dataset.ipynb → Para processar e gerar o dataset.
+treina_classificador.ipynb → Para treinar o modelo.
+classificação_por_inferencia.ipynb → Para testar a inferência em tempo real.
+📌 Observações
+Certifique-se de que sua câmera está conectada corretamente.
+Ajuste os parâmetros de detecção conforme necessário.
+O modelo atual reconhece apenas as letras A, B e L, mas pode ser expandido.
+🎯 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar PRs.
+
+📢 Feito com ❤️ para facilitar a comunicação em Libras!
