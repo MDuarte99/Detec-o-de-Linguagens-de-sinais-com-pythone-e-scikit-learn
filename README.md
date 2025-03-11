@@ -26,24 +26,31 @@ Este repositório contém um projeto baseado no vídeo de [Phillip](https://www.
 
 ## 🚀 Como Usar  
 
-1️⃣ Clone este repositório:  
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+1. **Captura de Dados:**
+   - Execute o script `Libras.ipynb` para capturar imagens dos gestos que deseja classificar.
+   
+2. **Processamento de Imagens:**
+   - Execute o script `Cria_dataset.ipynb` para extrair os dados das mãos e salvar em um arquivo `.pickle`.
 
-2️⃣ Clone este repositório:
-```bash
-  pip install -r requirements.txt
+3. **Treinamento do Modelo:**
+   - Execute o script `treina_classificador.ipynb` para treinar o modelo de classificação e salvar o modelo treinado.
 
-3️⃣ Execute os notebooks na ordem:
-Libras.ipynb → Para capturar os dados.
-Cria_dataset.ipynb → Para processar e gerar o dataset.
-treina_classificador.ipynb → Para treinar o modelo.
-classificação_por_inferencia.ipynb → Para testar a inferência em tempo real.
-📌 Observações
-Certifique-se de que sua câmera está conectada corretamente.
-Ajuste os parâmetros de detecção conforme necessário.
-O modelo atual reconhece apenas as letras A, B e L, mas pode ser expandido.
-🎯 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar PRs.
+4. **Classificação em Tempo Real:**
+   - Execute o script `classificação_por_inferencia.ipynb` para classificar gestos em tempo real usando a webcam.
 
-📢 Feito com ❤️ para facilitar a comunicação em Libras!
+## Requisitos
+
+- Python 3.x
+- Bibliotecas: OpenCV, MediaPipe, Scikit-learn, NumPy, Matplotlib, Pickle
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias no código, documentação ou novas funcionalidades.
+
+## Referências
+
+- Vídeo de Philip: [https://www.youtube.com/watch?v=MJCSjXepaAM](https://www.youtube.com/watch?v=MJCSjXepaAM)
+- Documentação do MediaPipe: [https://google.github.io/mediapipe/](https://google.github.io/mediapipe/)
+- Documentação do OpenCV: [https://opencv.org/](https://opencv.org/)
+
+Este repositório é uma implementação prática de visão computacional e aprendizado de máquina para reconhecimento de gestos, com foco na acessibilidade e inclusão através da Libras.
